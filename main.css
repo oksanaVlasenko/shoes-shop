@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,800|Slabo+27px');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.header__logo,
+.header__slogan{
+    display: none;
+}
+#header{
+    width: 100%;
+    display: flex; 
+    opacity: 0.5;
+}
+#header,
+.promo{
+    background-image: url('img/img_background_head.jpg');
+    background-size: cover;
+}
+nav li{
+    list-style: none;
+    display: inline;
+}
+.promo{
+    position: relative;
+}
+
+.icon{
+    display: none;
+}
+nav{
+     margin-left: 5%;
+    justify-content: flex-start;
+}
+.header__menu a{
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 3em;
+    font-size: 20px;
+    font-weight: 500;
+}
+.header__menu a:hover{
+    border-bottom: 3px solid #edf851;
+}
+
+h1{
+    text-align: right;
+    margin-right: 5%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding-top: 15px;  
+    color: #ffffff;
+}
+
+.promo__img{
+    display: none;
+    
+}
+
+.promo__decription,
+.promo__price,
+.promo__button{   
+    padding: 70px 70px 50px 200px;
+}
+.promo__decription p{
+    font-size: 27px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+.promo__decription ul{
+    font-size: 19px;
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: left;
+    font-weight: 400;
+}
+.promo__decription li{
+    padding-bottom: 10px;
+    color: #CDD1DA;
+}
+
+.promo__price{
+    font-size: 24px;
+    font-weight: 500;
+    color: #edf851;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+.promo__button {
+   position: absolute;
+   top: 440px;
+   left: 930px;
+   border: 3px solid #ffffff;
+   color: #edf851;
+   background: rgba(255, 255, 255, 0.3);
+   padding: 10px;
+   font-family: 'Raleway', sans-serif;
+   font-size: 25px;
+   font-weight: 700;
+
+}
+#gallery{
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 3px;
+    padding-top: 15px; 
+    padding-left: 5%;
+    color: #000000;
+}
+.gallery{
+    float: left;
+    width: 100%;
+    padding-left: 5%;	
+    box-sizing: border-box;
+    background: rgba(242, 242, 242, 0.5);
+}
+.gallery img{
+    margin-left: 10px;
+    max-width: 100%;
+    height: auto;
+    border: 10px solid #ffffff;
+    box-sizing: border-box;  
+   
+    -webkit-transform:scale(0.9); /*Webkit: уменьшаем размер до 0.8*/
+    -moz-transform:scale(0.9); /*Mozilla: масштабирование*/
+    -o-transform:scale(0.9); /*Opera: масштабирование*/
+    -webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+    -moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+    -o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+    opacity: 1; /*Начальная прозрачность изображений*/
+    margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+}
+.gallery img:hover{
+    -webkit-transform:scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/
+    -moz-transform:scale(1.1); /*Mozilla: масштабирование*/
+    -o-transform:scale(1.1); /*Opera: масштабирование*/
+    box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+    -webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+    -moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+    opacity: 1;
+}
+#order{
+    margin-left: 10%;
+    padding-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 35px; 
+    color: #FFF;
+}
+.order{
+    float: left;
+    width: 100%;
+    background-image: url('img/e.jpg'), radial-gradient(rgba(255,255,255,.3) 20px, transparent 20px);
+    background-size: 100% 100%, 4px 4px;
+    background-blend-mode: exclusion; 
+     
+}
+form{
+    margin:30px auto;
+    max-width:600px;
+    box-sizing:border-box;
+    padding:40px;
+    border-radius:5px; 
+    background:RGBA(255,255,255,1);
+    -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+    box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);  
+}
+.order__color,
+.order__size,
+.order__name,
+.order__phone,
+.order__price,
+.order__button{
+    height:70px;
+    width:100%;
+    box-sizing:border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size:18px; 
+    line-height: 1.2;
+    padding:10px;
+    margin:20px auto;  
+    text-align: center;
+}
+#color-black,
+#color-blue,
+#color-white {
+    position: absolute;
+    line-height: 1.5;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 7px;
+}
+#color-black + label,
+#color-blue + label,
+#color-white + label {
+    position: relative;
+    padding: 0 0 0 35px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#color-black + label::before,
+#color-blue + label::before,
+#color-white + label::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #CDD1DA;
+    border-radius: 50%;
+    background: #FFF;
+}
+#color-black + label::after,
+#color-blue + label::after,
+#color-white + label::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgba(242, 242, 242, 0.5);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+    opacity: 0;
+    transition: .2s;
+}
+#color-black:checked + label::after,
+#color-blue:checked + label::after,
+#color-white:checked + label::after{
+    opacity: 1;
+}
+#color-black:focus + label::before,
+#color-blue:focus + label::before,
+#color-white:focus + label::before{
+    box-shadow: 0 0 0 3px rgba(92, 92, 89, 0.7);
+}
+#order-size{
+    width: 300px;
+    position: relative;
+    height: 35px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #444;
+    background: transparent;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+}
+.order__name:focus,
+.order__phone:focus{
+    outline:none;
+    width: 300px;
+    height: 35px;
+    border:rgb(70, 71, 71) 2px solid;
+    color:rgb(78, 78, 78);
+    border-radius: 10px;
+
+}
+.order__name > input,
+.order__phone > input{
+    width: 300px;
+    height: 35px;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+
+}
+.order__button{
+    background: rgba(255, 255, 255, 0.3);
+    border: 3px solid rgb(192, 190, 190);
+    color: #e5f50a;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+ 
+  }
+.order__button:hover{
+     background: rgba(255, 255, 255, 0.3);
+  }
+
+table {  
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Raleway', sans-serif;
+    font-size:16px; 
+    line-height: 1.2;
+    padding:10px;
+    text-align: center;
+}
+
+table thead tr {
+    color: #000000; 
+    background: rgba(242, 242, 242, 0.6);
+    border: 1px solid #e6f0ff;
+    border-radius: 10px;
+}
+table thead tr td {
+    border: 1px solid #e6f0ff;
+}
+table tbody tr td {
+    border: 1px solid #e8e9eb;
+}
+table tbody tr:nth-child(2n) {
+    background: #f4f4f4;
+}
+table tfoot{
+    margin: 10px auto;
+}
+
+#payment-and-delivery{
+    margin-left: 10%;
+    padding-top: 15px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 35px; 
+    color: rgb(0, 0, 0);
+}
+
+.payment-and-delivery{
+    float: left;
+    width: 100%;	
+    box-sizing: border-box;
+    background: rgba(242, 242, 242, 0.5);
+}
+.payment-and-delivery li{
+    display: block;
+    text-align: center;
+    line-height: 3em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#reviews{
+    margin-left: 10%;
+    padding-top: 15px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 35px; 
+    color: #ffffff;
+}
+.reviews{
+    float: left;
+    width: 100%;
+    background-image: url('img/rev.jpg'), radial-gradient(rgba(255,255,255,.3) 20px, transparent 20px);
+    background-size: 100% 100%, 4px 4px;
+    background-blend-mode: exclusion;
+    
+    
+}
+
+
+.reviews ul {
+    display: flex;
+    justify-content: right;
+}
+.reviews li{
+    text-align: center;
+    list-style: none;
+    padding: 30px;
+    color: #FFF;
+    line-height: 1.5em;
+}
+.reviews h4{
+    font-size: 22px;
+    color: #edf851;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer{
+    float: left;
+    width: 100%;
+    background: rgba(242, 242, 242, 0.5);
+}
+.footer__contacts,
+.footer__social,
+.footer__copyright{
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    margin: 10px 0;
+}
+.footer__contacts li,
+.footer__social li{
+    list-style: none;
+}
+.footer__contacts li a,
+.footer__contacts li,
+.footer__social li a{
+    list-style: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+}
+h3{
+    font-size: 17px;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 1200px){
+    .header__menu a{
+        font-size: 16px;
+    }
+    nav{
+        margin-left: 20%;
+    }
+    .promo__button {
+        position: absolute;
+        top: 440px;
+        left: 830px;
+
+}
+@media all and (max-width: 910px){
+    #header nav a{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #header nav a >*{
+        flex: 1 1 250px;
+    }
+    
+    .promo__button {
+        position: absolute;
+        top: 500px;
+        left: 630px;
+        padding: 2px;
+        font-size: 15px;
+        margin: 0;
+    }
+    .promo__decription,
+     .promo__price{   
+    padding: 70px 70px 50px 100px;
+}
+}
+@media all and (max-width: 710px){
+    .promo__button {
+        position: absolute;
+        top: 500px;
+        left: 330px;
+        padding: 2px;
+    }
+    .gallery img{
+        margin-left: 16%;
+    }
+}
+@media all and (max-width: 610px){
+    .promo__button {
+        position: absolute;
+        top: 600px;
+        left: 330px;
+        padding: 0;
+    }
+    .gallery img{
+        margin-left: 10%;
+    }
+}
+@media all and (max-width: 510px){
+    .promo__button {
+        position: absolute;
+        top: 700px;
+        left: 300px;
+        padding: 0;
+    }
+    .reviews ul {
+        display: flex;
+            flex-wrap: wrap;
+       }
+       .reviews ul > *{
+          flex: 1 1 250px;
+       }
+       .gallery img{
+        margin-left: 5%;
+    } 
+
+}
